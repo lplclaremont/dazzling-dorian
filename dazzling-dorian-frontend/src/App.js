@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Post from './components/posts/Post'
+import { useState, useEffect } from 'react'
+
+const API_URL = 'http://localhost:3000/api/v1/posts'
+
+function getAPIData() {
+  return fetch(API_URL)
+  .then((response) => response.json())
+}
 
 function App() {
+  const [posts, setPosts] = useState([])
+
+  useEffect(() => {
+    getAPIData().then((postsData) => {
+      setPosts(postsData)
+    })
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Dazzling Dorian's Delightful Domain</h1>
+      {posts.map((post) => <Post post={post} key={post.id}/>
+      )}
     </div>
   );
 }
