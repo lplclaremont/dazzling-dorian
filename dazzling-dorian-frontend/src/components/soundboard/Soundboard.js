@@ -8,15 +8,9 @@ function Soundboard() {
     display: 'inline-block', // or 'block' depending on your layout needs
   };
 
-  // const buttonStyle = {
-  //   position: 'absolute',
-  //   left: `250px`,
-  //   top: `215px`
-  // };
-
   return (
     <div className="soundboard-container" style={containerStyle}>
-      <Soundbite soundClip={ mouth } />
+      <Soundbite soundClip={ mouth } left={410} top={230} />
       <img src="flamboyant.png" height="500" />
     </div>
   )

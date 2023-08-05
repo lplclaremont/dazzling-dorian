@@ -1,14 +1,14 @@
 import React, {useRef, useEffect} from 'react'
 
-function Soundbite({ soundClip }) {
+function Soundbite({ soundClip, left, top }) {
   function play() {
     new Audio(soundClip).play()
   }
 
   const buttonStyle = {
     position: 'absolute',
-    left: `410px`,
-    top: `230px`
+    left: `${left}px`,
+    top: `${top}px`
   };
 
   return (
