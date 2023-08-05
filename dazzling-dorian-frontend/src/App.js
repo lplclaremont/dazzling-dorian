@@ -21,8 +21,10 @@ function App() {
   return (
     <div className="App">
       <h1>Dazzling Dorian's Delightful Domain</h1>
-      {posts.map((post) => <Post post={post} key={post.id}/>
-      )}
+      <div className='posts-container'>
+        {posts.map((post) => <Post post={post} key={post.id}/>
+        )}
+      </div>
     </div>
   );
 }
