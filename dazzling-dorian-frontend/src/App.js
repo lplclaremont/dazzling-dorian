@@ -1,19 +1,13 @@
 import './App.css';
 import Post from './components/post/Post'
+import getPosts from './fetchers/posts'
 import { useState, useEffect } from 'react'
-
-const API_URL = 'http://localhost:3000/api/v1/posts'
-
-function getAPIData() {
-  return fetch(API_URL)
-  .then((response) => response.json())
-}
 
 function App() {
   const [posts, setPosts] = useState([])
 
   useEffect(() => {
-    getAPIData().then((postsData) => {
+    getPosts().then((postsData) => {
       setPosts(postsData)
     })
   }, []);
