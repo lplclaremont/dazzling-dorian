@@ -1,14 +1,24 @@
 import React, {useRef, useEffect} from 'react'
-//import mouth from "../../assets/mouth.m4a"
 
 function Soundbite({ soundClip }) {
   function play() {
     new Audio(soundClip).play()
   }
 
+  const buttonStyle = {
+    position: 'absolute',
+    left: `410px`,
+    top: `230px`
+  };
+
   return (
     <div>
-      <button type="button" onClick={play}>Play the Sound!</button>
+      <button
+        type="button"
+        style={buttonStyle}
+        onClick={play}>
+          Play the Sound!
+      </button>
     </div>
   )
 }
