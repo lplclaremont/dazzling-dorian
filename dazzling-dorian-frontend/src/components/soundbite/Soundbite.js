@@ -1,4 +1,5 @@
 import React, {useRef, useEffect} from 'react'
+import './Soundbite.css'
 
 function Soundbite({ soundClip, left, top }) {
   function play() {
