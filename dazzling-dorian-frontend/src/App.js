@@ -1,5 +1,5 @@
 import './App.css';
-import Post from './components/posts/Post'
+import Post from './components/post/Post'
 import { useState, useEffect } from 'react'
 
 const API_URL = 'http://localhost:3000/api/v1/posts'
