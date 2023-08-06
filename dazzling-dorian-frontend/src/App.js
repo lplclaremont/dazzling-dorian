@@ -1,26 +1,15 @@
 import './App.css';
 import Soundboard from './components/soundboard/Soundboard'
-import Post from './components/post/Post'
+import Feed from './components/feed/Feed'
 import getPosts from './fetchers/posts'
 import { useState, useEffect } from 'react'
 
 function App() {
-  const [posts, setPosts] = useState([])
-
-  useEffect(() => {
-    getPosts().then((postsData) => {
-      setPosts(postsData)
-    })
-  }, []);
-
   return (
     <div className="App">
       <h1>Dazzling Dorian's Delightful Domain</h1>
       <Soundboard />
-      <div className='posts-container'>
-        {posts.map((post) => <Post post={post} key={post.id}/>
-        )}
-      </div>
+      <Feed />
     </div>
   );
 }

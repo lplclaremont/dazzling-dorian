@@ -13,7 +13,7 @@ function Soundbite({ soundClip, left, top }) {
   };
 
   return (
-    <div>
+    <div className="soundbite">
       <button
         type="button"
         style={buttonStyle}

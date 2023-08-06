@@ -13,7 +13,7 @@ function Soundboard() {
   };
 
   return (
-    <div className="soundboard-container" style={containerStyle}>
+    <div className="soundboard" style={containerStyle}>
       <Soundbite soundClip={ mouth } left={435} top={230} />
       <Soundbite soundClip={ flamboyant } left={345} top={180} />
       <Soundbite soundClip={ smash } left={430} top={60} />
