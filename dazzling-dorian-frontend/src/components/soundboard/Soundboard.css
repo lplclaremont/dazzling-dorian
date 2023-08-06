@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap');
+
 img {
     border: 20px solid #555;
   }
+
+h3 {
+  font-family: 'Merienda';
+}

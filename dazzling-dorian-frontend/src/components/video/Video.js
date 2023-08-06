@@ -6,9 +6,7 @@ function Video({src, description}) {
   return (
     <div className='video'>
       <div className = 'name'>{description}</div>
-      <Iframe width="420" height="315"
-      src={src}>
-      </Iframe>
+        <Iframe width="420" height="315" src={src} />
       <br/><br/>
     </div>
   )

@@ -15,11 +15,12 @@ function Soundboard() {
 
   return (
     <div className="soundboard" style={containerStyle}>
-      <Soundbite soundClip={ mouth } left={455} top={240} />
-      <Soundbite soundClip={ flamboyant } left={365} top={190} />
-      <Soundbite soundClip={ smash } left={450} top={70} />
-      <Soundbite soundClip={ ddlike } left={385} top={250} />
-      <Soundbite soundClip={ mr2you } left={295} top={350} />
+      <h3>Click for some flamboyant responses</h3>
+      <Soundbite soundClip={ mouth } left={455} top={300} />
+      <Soundbite soundClip={ flamboyant } left={365} top={250} />
+      <Soundbite soundClip={ smash } left={450} top={130} />
+      <Soundbite soundClip={ ddlike } left={385} top={320} />
+      <Soundbite soundClip={ mr2you } left={295} top={400} />
       <img src="flamboyant.png" height="500" />
     </div>
   )

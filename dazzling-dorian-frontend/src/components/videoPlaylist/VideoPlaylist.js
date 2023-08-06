@@ -13,12 +13,16 @@ function VideoPlaylist() {
       id: 2,
       src: 'https://www.youtube.com/embed/MDDukLyXY-M',
       description: "It's business time."
-
     },
     {
       id: 3,
       src: 'https://www.youtube.com/embed/kk4BZ3uOSHI',
       description: "How about a little chic."
+    },
+    {
+      id: 4,
+      src: 'https://www.youtube.com/embed/mViZtUHqDg8',
+      description: "Now you see the light."
     }
   ]
 
