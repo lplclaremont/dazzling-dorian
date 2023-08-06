@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap');
+
+h1 {
+  font-family: 'Merienda';
+}
+
 .App {
   text-align: center;
+  background-color: #eb57e6;
 }
 
 .App-logo {
