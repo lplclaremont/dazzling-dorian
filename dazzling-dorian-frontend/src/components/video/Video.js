@@ -9,6 +9,7 @@ function Video({src, description}) {
       <Iframe width="420" height="315"
       src={src}>
       </Iframe>
+      <br/><br/>
     </div>
   )
 }
