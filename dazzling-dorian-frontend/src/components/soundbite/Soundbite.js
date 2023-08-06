@@ -18,7 +18,7 @@ function Soundbite({ soundClip, left, top }) {
         type="button"
         style={buttonStyle}
         onClick={play}>
-          Play the Sound!
+          Sound effect
       </button>
     </div>
   )
