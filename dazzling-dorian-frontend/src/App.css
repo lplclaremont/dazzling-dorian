@@ -3,11 +3,12 @@
 h1 {
   font-family: 'Merienda';
   color: #3432bf;
+  background-color: #eb57e6;
 }
 
 .App {
   text-align: center;
-  background-color: #eb57e6;
+  background-color: yellow;
 }
 
 .App-logo {

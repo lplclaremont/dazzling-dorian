@@ -1,0 +1,7 @@
+.feed {
+  position: absolute;
+  top: 700px; /* Adjust the value as needed to move the component higher */
+  right: 400px; /* Adjust the value as needed to move the component to the right */
+  height: 600px;
+  z-index: 1; /* Ensure the Feed component appears above other elements */
+}
