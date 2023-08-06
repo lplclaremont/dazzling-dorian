@@ -1,4 +1,5 @@
 import React from 'react'
+import './Soundboard.css'
 import Soundbite from '../soundbite/Soundbite'
 import mouth from "../../assets/mouth.m4a"
 import flamboyant from "../../assets/flamboyant.m4a"
@@ -14,11 +15,11 @@ function Soundboard() {
 
   return (
     <div className="soundboard" style={containerStyle}>
-      <Soundbite soundClip={ mouth } left={435} top={230} />
-      <Soundbite soundClip={ flamboyant } left={345} top={180} />
-      <Soundbite soundClip={ smash } left={430} top={60} />
-      <Soundbite soundClip={ ddlike } left={370} top={250} />
-      <Soundbite soundClip={ mr2you } left={280} top={350} />
+      <Soundbite soundClip={ mouth } left={455} top={240} />
+      <Soundbite soundClip={ flamboyant } left={365} top={190} />
+      <Soundbite soundClip={ smash } left={450} top={70} />
+      <Soundbite soundClip={ ddlike } left={385} top={250} />
+      <Soundbite soundClip={ mr2you } left={295} top={350} />
       <img src="flamboyant.png" height="500" />
     </div>
   )
