@@ -1,7 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Post from '../post/Post'
 import getPosts from '../../fetchers/posts'
-import { useState, useEffect } from 'react'
 
 function Feed() {
   const [posts, setPosts] = useState([])
